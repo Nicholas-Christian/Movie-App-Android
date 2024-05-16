@@ -39,6 +39,7 @@ public class MovieModel implements Parcelable{
 
     private String poster_path;
     private String release_date;
+    @SerializedName("id")
     private String movie_id;
     private float vote_average;
     @SerializedName("overview")
