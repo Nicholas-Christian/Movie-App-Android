@@ -39,6 +39,7 @@ public class MovieRecyclerView extends RecyclerView.Adapter<RecyclerView.ViewHol
         ((MovieViewHolder)holder).release_date.setText(mMovies.get(i).getRelease_date());
         ((MovieViewHolder) holder).original_language.setText(mMovies.get(i).getOriginal_language());
         ((MovieViewHolder) holder).ratingBar.setRating((float) mMovies.get(i).getVote_average() / 2);
+        ((MovieViewHolder) holder).ratingBar.setIsIndicator(true);
 
 
         Glide.with(holder.itemView.getContext())

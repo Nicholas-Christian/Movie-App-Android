@@ -82,6 +82,7 @@ public class MovieDetails extends AppCompatActivity {
         titleDetails.setText(movieModel.getTitle());
         descDetails.setText(movieModel.getMovie_overview());
         ratingBarDetails.setRating(movieModel.getVote_average() / 2);
+        ratingBarDetails.setIsIndicator(true);
 
         Glide.with(this)
                 .load("https://image.tmdb.org/t/p/w500/" + movieModel.getPoster_path())
