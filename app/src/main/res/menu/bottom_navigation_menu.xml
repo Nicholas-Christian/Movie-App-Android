@@ -15,10 +15,7 @@
         android:id="@+id/watchlist"
         android:icon="@drawable/baseline_live_tv_24"
         android:title="Watch List"/>
-    <item
-        android:id="@+id/account"
-        android:icon="@drawable/baseline_account_circle_24"
-        android:title="My Account"/>
+
 
 
 

@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity  {
                 replaceFragment(new SearchFragment());
             }else if (item.getItemId() == R.id.watchlist) {
                 replaceFragment(new WatchListFragment());
-            }else if (item.getItemId() == R.id.account) {
-                replaceFragment(new AccountFragment());
             }
             return true;
         });
