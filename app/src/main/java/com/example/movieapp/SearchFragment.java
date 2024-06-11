@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -140,6 +141,7 @@ public class SearchFragment extends Fragment implements OnMovieListener{
         movieRecyclerAdapter = new MovieRecyclerView(this);
 
         recyclerView.setAdapter(movieRecyclerAdapter);
+ // 2 is the number of columns
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // RecyclerView OnScrollListener
